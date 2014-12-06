@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/recents_clear_all_pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test"
+        android:text="@string/clear_all_position" />
+
+    <Button
+        android:id="@+id/recents_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test"
+        android:text="@string/recents_background" />
+
+    <TextView
+        android:id="@+id/recents_search_options_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recents_show_search"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/recents_search_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/recents_search_options" />
+
+</TableLayout>

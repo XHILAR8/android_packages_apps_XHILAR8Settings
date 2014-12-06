@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckBox
+        android:id="@+id/allow_sb_colour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_sb_colour" />
+
+    <TextView
+        android:id="@+id/statusbar_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sb_size" 
+        android:labelFor="@+id/sb_size">
+    </TextView>
+
+    <EditText
+        android:id="@+id/sb_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/statusbar_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+</TableLayout>
