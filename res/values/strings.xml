@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">XHILAR8 Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="notification_background">Notification shade background</string>
     <string name="lockscreen_background">Lockscreen Background</string>
     <string name="welcome">Thank you for trying XHILAR8 ROM! Pull the drawer out the left to access some exhilarating settings</string>
@@ -34,5 +33,7 @@
     <string name="reboot">Reboot</string>
     <string name="restart_systemui">Restart SystemUI</string>
     <string name="poweroff">Power Off</string>
+    
+    <string name="download_latest">Download Latessst</string>
 
 </resources>
