@@ -34,6 +34,6 @@
     <string name="restart_systemui">Restart SystemUI</string>
     <string name="poweroff">Power Off</string>
     
-    <string name="download_latest">Download Latessst</string>
+    <string name="download_latest">Download Latest</string>
 
 </resources>
