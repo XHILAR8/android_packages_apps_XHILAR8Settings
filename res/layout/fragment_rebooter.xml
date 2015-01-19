@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/rebooter_reboot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reboot" />
+
+    <Button
+        android:id="@+id/rebooter_restartSystemUI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restart_systemui" />
+    
+    <Button
+        android:id="@+id/rebooter_poweroff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poweroff" />
+
+</TableLayout>

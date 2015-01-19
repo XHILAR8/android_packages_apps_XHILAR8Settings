@@ -18,6 +18,7 @@
         <item name="never">Never</item>
     </string-array>
     <string-array name="colours">
+        <item name="default">Default</item>
         <item name="red">Red</item>
         <item name="yellow">Yellow</item>
         <item name="orange">Orange</item>
@@ -30,5 +31,8 @@
 
     <string name="save">Save</string>
     <string name="navbar_background_colour">Navigation Bar Colour</string>
+    <string name="reboot">Reboot</string>
+    <string name="restart_systemui">Restart SystemUI</string>
+    <string name="poweroff">Power Off</string>
 
 </resources>
