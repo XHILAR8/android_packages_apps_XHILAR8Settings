@@ -8,8 +8,8 @@ import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.database.Cursor;
@@ -21,10 +21,7 @@ import android.provider.MediaStore.MediaColumns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 public class RecentsScreenFragment extends Fragment {
@@ -65,25 +62,7 @@ public class RecentsScreenFragment extends Fragment {
                             startActivityForResult(i, 1);
                     }
                 });
-        Spinner searchOptions = (Spinner) root
-                .findViewById(R.id.recents_search_options);
-        searchOptions.setOnItemSelectedListener(new OnItemSelectedListener() {
 
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view,
-                    int position, long id) {
-                Editor editor = pref.edit();
-                editor.putInt("recents_search_options", position);
-                editor.apply();
-                Toast.makeText(c, "Please reboot to apply changes", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-
-        });
         return root;
     }
 
@@ -96,7 +75,7 @@ public class RecentsScreenFragment extends Fragment {
                 && null != data) {
             Uri selectedImage = data.getData();
             String[] filePathColumn = {
-                MediaColumns.DATA
+                    MediaColumns.DATA
             };
 
             Cursor cursor = getActivity().getContentResolver().query(
